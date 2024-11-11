@@ -1,0 +1,118 @@
+/* :root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+} */
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  /* background: #fff; */
+  border-radius: 5rem;
+}
+
+body {
+  margin: 0;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 8vh;
+  background-color: #0396ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 40px;
+}
+.logo .logo-name {
+  /* font-style: cursive; */
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 14px;
+}
+.nav-bar-link {
+  width: 60%;
+  margin: 0 40px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4em;
+}
+
+.nav-bar-link a {
+  color: #fffdd0;
+}
+.nav-bar-btn {
+  height: 25px;
+  padding: 3px;
+  font-weight: 700;
+  border: 1px solid #32ccbc;
+  border-radius: 5px;
+  background-color: #0396ff;
+}
+
+/* Hover nav bar */
+
+.nav-bar-link a:hover {
+  border-bottom: 2px solid #fff;
+
+  color: hsl(57, 100%, 90%);
+}
+
+.nav-bar-btn:hover {
+  color: #fff;
+  background-color: #32ccbc;
+}
+
+/*body start here----------------------------------------------------------*/
+.body-content {
+  padding-top: 60px;
+  background-image: url(/IMAGES/body-bg.jpg);
+  height: calc(100% - -25vh);
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in total height */
+  /* background-image: url("IMAGES/body-bg.jpg"); */
+  background-size: cover;
+  background-position: center;
+  /* margin-top: 50px; */
+
+  position: fixed;
+  z-index: 0;
+}
