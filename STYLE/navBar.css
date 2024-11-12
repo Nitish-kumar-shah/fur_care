@@ -7,7 +7,7 @@
 
 * {
   font-family: "Roboto", sans-serif;
-  background-color: #000;
+  /* background-color: #000; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -115,4 +115,41 @@ body {
 
   position: fixed;
   z-index: 0;
+}
+.body-content2 {
+  padding-top: 60px;
+  background-image: url(/IMAGES/dog-bg.jpg);
+  height: calc(100% - -25vh);
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in total height */
+  /* background-image: url("IMAGES/body-bg.jpg"); */
+  background-size: cover;
+  background-position: center;
+
+  position: fixed;
+  z-index: 0;
+}
+.n1 {
+  text-align: right;
+  margin-right: 50px;
+  font-size: 50px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0), 0 0 5px darkblue;
+}
+.how {
+  text-align: right;
+  margin-right: 60px;
+  font-size: 30px;
+  /* color: #fff; */
+  margin-top: 60px;
+}
+.how a {
+  color: #fff;
+}
+.how a:hover {
+  color: #000000;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(68, 180, 236);
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
 }
