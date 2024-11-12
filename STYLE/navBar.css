@@ -74,7 +74,15 @@ body {
   justify-content: space-between;
   font-size: 1.4em;
 }
-
+.nav-link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 15px;
+}
 .nav-bar-link a {
   color: #fffdd0;
 }
@@ -89,10 +97,8 @@ body {
 
 /* Hover nav bar */
 
-.nav-bar-link a:hover {
-  border-bottom: 2px solid #fff;
-
-  color: hsl(57, 100%, 90%);
+.nav-link-box:hover {
+  background-color: #187bc2;
 }
 
 .nav-bar-btn:hover {
