@@ -97,6 +97,11 @@ body {
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
 }
+.nav-bar i {
+  font-size: 17px;
+  font-weight: 700;
+  display: none;
+}
 
 /* Hover nav bar */
 
@@ -124,7 +129,7 @@ body {
   background-position: center;
   /* margin-top: 50px; */
 
-  position: fixed;
+  position: relative;
   z-index: 0;
 }
 .body-content-left-box {
@@ -136,7 +141,7 @@ body {
 .body-content-left-box .heading {
   font-weight: 800;
   font-size: 33px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .body-content-left-box .heading span {
@@ -150,7 +155,7 @@ body {
   height: 54%;
   width: 100%;
   /* background-color: red; */
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .dp-link-box .dp {
   display: flex;
@@ -170,4 +175,33 @@ body {
 }
 .dp-link-box .dp:hover {
   border: 4px outset #0396ff;
+}
+
+.login-bar {
+  position: fixed;
+  top: 8vh;
+  right: -300;
+  width: 300px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.279);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.8s ease-in-out;
+  padding: 4px;
+}
+.login-bar.show {
+  right: 0;
+}
+
+.login-bar .close {
+  font-size: 17px;
+  /* font-weight: 800; */
+  /* background-color: red; */
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }

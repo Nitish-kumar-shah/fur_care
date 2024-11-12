@@ -9,8 +9,11 @@
       href="C:\Users\Devesh Dagur\Downloads\𝖋𝖚𝖗 (1).png"
       type="image/x-icon"
     />
-
-    <link rel="Stylesheet" href="./STYLE/navBar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="Stylesheet" href="./STYLE/home.css" />
   </head>
   <body>
     <div class="nav-bar">
@@ -24,7 +27,10 @@
         <div class="nav-link-box"><a href="#">Service</a></div>
         <div class="nav-link-box"><a href="#">Contact</a></div>
       </div>
-      <button class="nav-bar-btn">log in</button>
+      <button onclick="showLoginBar()" class="nav-bar-btn" id="toggleButton">
+        log in
+      </button>
+      <i class="ri-menu-line"></i>
     </div>
 
     <!------------------------------------------body start here-------------------------------------------------------------------->
@@ -55,8 +61,18 @@
             <a href=""><img href="#" src="/IMAGES/dp-turtle.webp" alt="" /></a>
           </div>
         </div>
+
+        <!-------------------------login-bar-start-------------------------------->
+        <div class="login-bar" id="login-bar">
+          <div class="close" id="closeButton">
+            <i class="ri-close-large-fill"></i>
+          </div>
+          <input type="text" placeholder="email or phone" />
+        </div>
+        <!-------------------------login-bar-end-------------------------------->
       </div>
     </div>
     <!----------------------------------------b0dy end here------------------------------------------>
+    <script src="/SCRIPTS/login-bar.js"></script>
   </body>
 </html>
