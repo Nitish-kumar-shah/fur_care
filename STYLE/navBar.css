@@ -121,3 +121,17 @@ body {
   position: fixed;
   z-index: 0;
 }
+.body-content-left-box {
+  width: 40%;
+  height: 74%;
+  padding-left: 20px;
+  /* background-color: red; */
+}
+.body-content-left-box .heading {
+  font-weight: 800;
+  font-size: 33px;
+  margin-top: 40px;
+}
+.body-content-left-box .heading span {
+  color: #0396ff;
+}
