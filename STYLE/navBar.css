@@ -61,7 +61,7 @@ body {
 }
 .logo .logo-name {
   font-family: cursive;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 900;
   margin-top: 14px;
 }
@@ -73,6 +73,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 1.4em;
+  font-weight: 600;
 }
 .nav-link-box {
   display: flex;
@@ -90,20 +91,25 @@ body {
   height: 25px;
   padding: 3px;
   font-weight: 700;
-  border: 1px solid #32ccbc;
-  border-radius: 5px;
+  border: 1.5px inset #32ccbc;
+  border-radius: 7px;
   background-color: #0396ff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Hover nav bar */
 
 .nav-link-box:hover {
-  background-color: #187bc2;
+  background-color: hsl(205, 100%, 40%);
+  border: 1.5px inset #32ccbc;
+  cursor: pointer;
 }
 
 .nav-bar-btn:hover {
   color: #fff;
   background-color: #32ccbc;
+  border: 1.5px solid #32ccbc;
 }
 
 /*body start here----------------------------------------------------------*/
@@ -139,7 +145,8 @@ body {
 
 .dp-link-box {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 40px;
   height: 54%;
   width: 100%;
   /* background-color: red; */
