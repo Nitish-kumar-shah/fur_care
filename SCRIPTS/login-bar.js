@@ -1,6 +1,6 @@
 document.getElementById("toggleButton").addEventListener("click", function () {
   const sidebar = document.getElementById("login-bar");
-  sidebar.classList.add("show"); // Toggles the "show" class to display/hide the sidebar
+  sidebar.classList.add("show");
 });
 
 document.getElementById("closeButton").addEventListener("click", function () {
