@@ -155,7 +155,7 @@ body {
   cursor: pointer;
 }
 
-.info-virtual-box .outer-box::after {
+/* .info-virtual-box .outer-box::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -167,7 +167,7 @@ body {
   z-index: -1;
   padding: 3px;
   border-radius: 10px;
-}
+} */
 
 .info-virtual-box .outer-box .img-box {
   background-color: red;
