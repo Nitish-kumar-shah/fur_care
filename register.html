@@ -1,0 +1,149 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUR CARE</title>
+
+    <link
+      rel="icon"
+      href="C:\Users\Devesh Dagur\Downloads\𝖋𝖚𝖗 (1).png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="Stylesheet" href="./STYLE/register.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="./IMAGES/logo.png" alt="our logo" />
+        <p class="logo-name">fur care</p>
+      </div>
+      <div class="nav-bar-link">
+        <div class="nav-link-box"><a href="#">Home</a></div>
+        <div class="nav-link-box"><a href="#">About</a></div>
+        <div class="nav-link-box"><a href="#">Service</a></div>
+        <div class="nav-link-box"><a href="#">Contact</a></div>
+      </div>
+      <button onclick="showLoginBar()" class="nav-bar-btn" id="toggleButton">
+        log in
+      </button>
+      <i class="ri-menu-line"></i>
+    </div>
+
+    <!------------------------------------------body start here-------------------------------------------------------------------->
+    <div class="body-content">
+        <div class="Sign">
+        <button onclick="document.getElementById('id01').style.display='block'">Sign Up As User</button>
+        <br>
+        <br>
+        
+        <button onclick="document.getElementById('id01').style.display='block'">Sign Up As service provider</button>
+        </div>
+      <div class="box">
+            <div class="close1" id="closeButton1">
+              <!-- <i class="ri-close-large-fill"></i> -->
+            </div>
+            <div class="login">
+              <br>
+              <br>
+                <h2 style="color: #fff;">Sign Up</h2>
+                
+                <div class="input-group" >
+               <br>
+                  <form action="#" method="POST">
+                  
+                <label for="cars">Choose a Profession:</label>
+                 <br>
+                <select class="option" name="Profession" id="p1" placeholder="select Profession">
+                 <option value="1">Animal Trainer</option>
+                 <option value="2">Pet Sitter</option>
+                 <option value="3">Pet Groomer</option>
+                 <option value="4">Veterinarian/ Pet Docter</option>
+                </select>
+              </div>
+                <br>
+                <br>
+                
+                    <div class="input-group">
+                      <label for="first-name">First Name</label>
+                      <br>
+                      <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <br>
+                    <div class="input-group" >
+                      <label for="last-name">Last Name</label>
+                      <br>
+                      <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <label for="email">Email Address</label>
+                      
+                      <br>
+                      <input type="email" id="email" name="email" required>
+                      <br>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <br>
+                      <label for="adress"> Address</label>
+                      <br>
+                      <input type="text" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <label for="password">Password</label>
+                      <br>
+                      <input type="password" id="password" name="password" required>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <label for="confirm-password">Confirm Password</label>
+                      <br>
+                      <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <button type="submit">Create Account</button>
+                    </div>
+                    <br>
+                    <div class="login-link">
+                      <p>Already have an account? <a href="#">Log In</a></p>
+                    </div>
+                  </form>
+              
+          </div>
+
+          <div class="login-bar-card">
+            <div class="signup-container">
+          
+              </div>
+          </div>
+        </div>
+        </div>
+          </div>
+          
+
+        <!-------------------------login-bar-start-------------------------------->
+        <div class="login-bar" id="login-bar">
+          <div class="close" id="closeButton">
+            <i class="ri-close-large-fill"></i>
+          </div>
+          <div class="login-bar-card">
+            <input
+              type="text"
+              placeholder="email or phone"
+              class="login-input"
+            />
+          </div>
+        </div>
+        <!-------------------------login-bar-end-------------------------------->
+      </div>
+    </div>
+    <!----------------------------------------b0dy end here------------------------------------------>
+    <script src="/SCRIPTS/login-bar.js"></script>
+  </body>
+</html>
