@@ -19,8 +19,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  padding-bottom: 500px;
-  background-color: #f5f5dc;
+  background-color: #f5fdcf;
 }
 
 .nav-bar {
@@ -116,16 +115,16 @@ body {
   box-sizing: border-box;
   background-size: cover;
   background-position: center;
-  background-color: #f5f5dc;
+  /* background-color: #fff7aa; */
 }
 .body-content .heading-img-box {
-  margin: 60px auto 0 auto;
+  margin: 70px auto 0 auto;
   width: calc(100% - 80px);
   height: 350px;
   background-color: black;
   overflow: hidden;
   border-radius: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 .body-content .heading-img-box img {
@@ -134,9 +133,9 @@ body {
   object-fit: cover;
 }
 .info-virtual-box {
-  height: 300px;
+  height: 190px;
   width: 100%;
-  background: #f5f5dc;
+  /* background: #fff7aa; */
   display: flex;
   /* justify-content: space-around; */
   /* row-gap: 10px;
@@ -153,9 +152,13 @@ body {
   border-radius: 3px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.outer-box:hover {
+  background-color: #90e1e77f;
 }
 
-.info-virtual-box .outer-box::after {
+/* .info-virtual-box .outer-box::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -167,7 +170,7 @@ body {
   z-index: -1;
   padding: 3px;
   border-radius: 10px;
-}
+} */
 
 .info-virtual-box .outer-box .img-box {
   background-color: red;
@@ -187,4 +190,209 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: hsl(0, 0%, 30%);
+}
+
+.intro-to-rabbit-box {
+  margin: 0 auto 0 auto;
+  width: calc(100% - 60px);
+  margin-bottom: 40px;
+  /* background-color: #dadada; */
+}
+.intro-to-rabbit-box h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  position: relative;
+  overflow: hidden;
+}
+.intro-to-rabbit-box h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position the border at the bottom */
+  left: 0; /* Start animation from the left */
+  width: 0; /* Initially, no width */
+  height: 5px; /* Set the border height */
+  /* background-color: hsl(0, 0%, 30%); */
+  background-image: linear-gradient(to right, blue, red, green);
+  transition: width 2s ease; /* Smooth transition effect */
+}
+
+.intro-to-rabbit-box h1:hover::after {
+  width: 100%; /* On hover, extend the width to full */
+}
+.intro-to-rabbit-box .rabbit-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.rabbit-content-box .intro-rabbit-img {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  overflow: hidden;
+  margin-right: 100px;
+  border-radius: 5px;
+}
+.rabbit-content-box .intro-rabbit-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.rabbit-content-box p {
+  font-size: 18px;
+  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*secod box start*/
+.intro-to-rabbit-box2 {
+  margin: 0 auto 0 auto;
+  width: calc(100% - 60px);
+  margin-bottom: 40px;
+  /* background-color: #dadada; */
+}
+.intro-to-rabbit-box2 h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  position: relative;
+  overflow: hidden;
+}
+.intro-to-rabbit-box2 h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position the border at the bottom */
+  left: 0; /* Start animation from the left */
+  width: 0; /* Initially, no width */
+  height: 5px; /* Set the border height */
+  /* background-color: hsl(0, 0%, 30%); */
+  background-image: linear-gradient(to right, blue, red, green);
+  transition: width 2s ease; /* Smooth transition effect */
+}
+
+.intro-to-rabbit-box2 h1:hover::after {
+  width: 100%; /* On hover, extend the width to full */
+}
+
+.intro-to-rabbit-box2 .rabbit-content-box2 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: red; */
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+.rabbit-content-box2 .intro-rabbit-img2 {
+  width: 200px;
+  height: 150px;
+  /* background-color: black; */
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.rabbit-content-box2 .intro-rabbit-img2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.rabbit-content-box2 p {
+  font-size: 18px;
+  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 260px;
+}
+.second-box {
+  display: flex;
+  align-items: start;
+  /* justify-content: flex-end; */
+  /* background-color: #dadada; */
+}
+.second-box .housing1 {
+  background-color: #f0b494;
+  width: 100%;
+  margin-top: 190px;
+  height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.housing1 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.housing2 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #9ca58c;
+  width: 100%;
+  /* margin-top: 190px; */
+  /* margin-left: 40px; */
+  height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.housing2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.third-box {
+  display: flex;
+  gap: 25px;
+  flex: 1;
+}
+.third-box .cont-box {
+  /* width: 400px; */
+  margin-left: 10px;
+}
+.essential-content {
+  font-size: 13px;
+  margin-top: 9px;
+  font-weight: bold;
+}
+
+.health-box {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.health-box .card {
+  height: 320px;
+  width: 260px;
+  background-color: hsla(174, 59%, 51%, 0.393);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s ease;
+}
+.health-box .card:hover {
+  background-color: hsl(0, 0%, 10%);
+  color: #fff;
+}
+
+.health-box .card:hover h2 {
+  color: red; /* Target h2 inside card on hover */
+}
+.card h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.card p {
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
