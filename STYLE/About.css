@@ -1,0 +1,232 @@
+/* :root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+} */
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    /* background: #fff; */
+    border-radius: 5rem;
+  }
+  
+  body {
+    margin: 0;
+    position: fixed;
+  }
+  
+  .nav-bar {
+    width: 100%;
+    height: 8vh;
+    background-color: #0396ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .logo .logo-name {
+    font-family: cursive;
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: 14px;
+  }
+  .nav-bar-link {
+    width: 60%;
+    margin: 0 40px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  .nav-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+  }
+  .nav-bar-link a {
+    color: #fffdd0;
+  }
+  .nav-bar-btn {
+    height: 25px;
+    padding: 3px;
+    font-weight: 700;
+    border: 1.5px inset #32ccbc;
+    border-radius: 7px;
+    background-color: #0396ff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .nav-bar i {
+    font-size: 17px;
+    font-weight: 700;
+    display: none;
+  }
+  
+  /* Hover nav bar */
+  
+  .nav-link-box:hover {
+    background-color: hsl(205, 100%, 40%);
+    border: 1.5px inset #32ccbc;
+    cursor: pointer;
+  }
+  
+  .nav-bar-btn:hover {
+    color: #fff;
+    background-color: #32ccbc;
+    border: 1.5px solid #32ccbc;
+  }
+  
+  /*body start here----------------------------------------------------------*/
+  .body-content {
+    padding-top: 0px;
+    background-image: url(/IMAGES/about_bg.jpg);
+    height: calc(100% - -25vh);
+    width: 100%;
+    display: flex;
+    box-sizing: border-box; /* Ensures padding and border are included in total height */
+    /* background-image: url("IMAGES/body-bg.jpg"); */
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+   
+    gap:20px; 
+    /* margin-top: 50px; */
+    position: fixed;
+    z-index: 0;
+    justify-content: center;
+  }
+  .body-content-left-box {
+    width: 40%;
+    height: 74%;
+    padding-left:20px;
+    /* background-color: red; */
+  }
+  .body-content-left-box .heading {
+    font-weight: 800;
+    font-size: 33px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .body-content-left-box .heading span {
+    color: #0396ff;
+  }
+
+  .box {
+    margin: auto;
+    width: 25%;
+    /* border: 4px solid rgb(32, 122, 212); */
+    padding: 10px;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.386);
+    /* backdrop-filter: blur(10px); */
+    /* opacity: 0.6; */
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(21, 139, 178, 0.409);
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .heading {
+    color: #fff;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    
+  }
+  .link-box {
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+  }
+  .link-box a i{
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+  }
+  .link-box a i:hover{
+    color: rgb(25, 138, 190);
+    font-size: 32px;
+  }
+  
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    border:4px inset rgb(25, 138, 179);
+  }
+  
+  .login-bar {
+    position: fixed;
+    top: 8vh;
+    right: -300;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.8s ease-in-out;
+    padding: 4px;
+  }
+  .login-bar.show {
+    right: 0;
+  }
+  
+  .login-bar .close {
+    font-size: 17px;
+    /* font-weight: 800; */
+    /* background-color: red; */
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: hsl(0, 2%, 67%);
+  }
+  .login-bar .login-bar-card {
+    margin: 15px;
+  }
+  
