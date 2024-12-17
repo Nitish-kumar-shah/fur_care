@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./STYLE/products.css" />
+    <link rel="stylesheet" href="./STYLE/shared/general.css" />
   </head>
   <body>
     <!-----------------------------------------nav-bar start here------------------------------------------>
@@ -121,17 +122,24 @@
     </div>
     <!---------------------------------------bottom-bar-end here--------------------------------------->
     <!------------------------header-img start here---------------------------->
-    <div class="header-img">
-      <div class="img-box1 js-left-btn">
-        <div class="scroll-btn-left">
-          <i class="ri-arrow-left-wide-line"></i>
+    <div class="main-header">
+      <div class="header-img">
+        <div class="img-box1 js-left-btn">
+          <div class="scroll-btn-left">
+            <i class="ri-arrow-left-wide-line"></i>
+          </div>
+          <div class="scroll-btn-right">
+            <i class="ri-arrow-right-wide-fill"></i>
+          </div>
         </div>
-        <div class="scroll-btn-right">
-          <i class="ri-arrow-right-wide-fill"></i>
-        </div>
+        <div class="img-box2"></div>
+        <div class="img-box3"></div>
       </div>
-      <div class="img-box2"></div>
-      <div class="img-box3"></div>
+      <!------------------------------product container------------------------------------->
+      <div class="main">
+        <div class="product-grid js-product-grid"></div>
+        <!------------------------------------->
+      </div>
     </div>
     <script src="/SCRIPTS/product.js"></script>
   </body>

@@ -74,3 +74,73 @@ headerImg.addEventListener("mouseover", () => clearInterval(autoScroll));
 headerImg.addEventListener("mouseleave", () => {
   autoScroll = setInterval(scrollRight, 3000);
 });
+
+const products = [
+  {
+    image: "/IMAGES/dp-cat2.webp",
+    name: "This is Good product",
+    rating: {
+      stars: 4.5,
+      conut: 87,
+    },
+    priceCents: 1098,
+  },
+  {
+    image: "/IMAGES/dog-bg.jpg",
+    name: " hola amigo jfdjkfd djfdjfdf jdkjfdf dkjfdfjd jksdjfdf kdjfd",
+    rating: {
+      stars: 3,
+      conut: 98,
+    },
+    priceCents: 1087,
+  },
+];
+
+let productsHTML = "";
+
+products.forEach((product) => {
+  productsHTML += `
+            <div class="products-container">
+            <div class="product-img-container">
+              <img class="product-image" alt="" src="${product.image}" />
+            </div>
+            <div class="product-name limit-text-to-2-lines">
+              ${product.name}
+            </div>
+            <div class="product-rating-container">
+              <img
+                class="product-rating-stars"
+                src="/IMAGES/raiting/rating-${product.rating.stars * 10}.png"
+              />
+              <div class="product-rating-count link-primary">${
+                product.rating.conut
+              }</div>
+            </div>
+            <div class="product-price">$${(product.priceCents / 100).toFixed(
+              2
+            )}</div>
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="product-spacer"></div>
+            <div class="add-to-cart">
+              <img class="" src="" />
+              Added
+            </div>
+            <button class="add-to-cart-btn button-primary">Add to cart</button>
+          </div>
+  `;
+});
+
+document.querySelector(".js-product-grid").innerHTML = productsHTML;
