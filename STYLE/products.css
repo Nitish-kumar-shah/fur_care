@@ -437,6 +437,7 @@ navbar {
 .add-to-cart-btn {
   width: 100%;
   padding: 8px;
-  border-radius: 50px;
-  cursor: pointer;
+  /* border-radius: 50px; */
+  /* cursor: pointer; */
+  /* background-color: #0396ff; */
 }

@@ -27,3 +27,21 @@ input:focus {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.btn-primary {
+  color: rgb(33, 33, 33);
+  background-color: hsl(205, 100%, 51%);
+  border: 1px solid hsl(205, 100%, 47%);
+  border-radius: 17px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.btn-primary:hover {
+  background-color: hsl(205, 100%, 61%);
+  border: 1px solid hsl(205, 100%, 65%);
+}
+.btn-primary:active {
+  background: hsl(205, 100%, 51%);
+  border-color: hsl(205, 100%, 47%);
+  box-shadow: none;
+}

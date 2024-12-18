@@ -1,5 +1,6 @@
 const products = [
   {
+    id: 1,
     image: "/IMAGES/dp-cat2.webp",
     name: "This is Good product",
     rating: {
@@ -9,6 +10,7 @@ const products = [
     priceCents: 1098,
   },
   {
+    id: 2,
     image: "/IMAGES/dog-bg.jpg",
     name: " hola amigo jfdjkfd djfdjfdf jdkjfdf dkjfdfjd jksdjfdf kdjfd",
     rating: {
@@ -18,6 +20,7 @@ const products = [
     priceCents: 1087,
   },
   {
+    id: 3,
     image: "",
     name: "",
     rating: {
@@ -26,6 +29,7 @@ const products = [
     },
   },
   {
+    id: 4,
     image: "",
     name: "",
     rating: {
@@ -34,6 +38,7 @@ const products = [
     },
   },
   {
+    id: 5,
     image: "",
     name: "",
     rating: {
@@ -42,6 +47,7 @@ const products = [
     },
   },
   {
+    id: 6,
     image: "",
     name: "",
     rating: {
@@ -50,6 +56,7 @@ const products = [
     },
   },
   {
+    id: 7,
     image: "",
     name: "",
     rating: {
@@ -58,6 +65,7 @@ const products = [
     },
   },
   {
+    id: 8,
     image: "",
     name: "",
     rating: {
@@ -66,6 +74,7 @@ const products = [
     },
   },
   {
+    id: 9,
     image: "",
     name: "",
     rating: {
@@ -74,6 +83,7 @@ const products = [
     },
   },
   {
+    id: 10,
     image: "",
     name: "",
     rating: {
@@ -82,6 +92,7 @@ const products = [
     },
   },
   {
+    id: 11,
     image: "",
     name: "",
     rating: {
@@ -90,6 +101,7 @@ const products = [
     },
   },
   {
+    id: 12,
     image: "",
     name: "",
     rating: {
@@ -98,6 +110,7 @@ const products = [
     },
   },
   {
+    id: 13,
     image: "",
     name: "",
     rating: {
@@ -106,6 +119,7 @@ const products = [
     },
   },
   {
+    id: 14,
     image: "",
     name: "",
     rating: {
@@ -114,6 +128,7 @@ const products = [
     },
   },
   {
+    id: 15,
     image: "",
     name: "",
     rating: {
@@ -122,6 +137,7 @@ const products = [
     },
   },
   {
+    id: 16,
     image: "",
     name: "",
     rating: {
@@ -130,6 +146,7 @@ const products = [
     },
   },
   {
+    id: 17,
     image: "",
     name: "",
     rating: {
@@ -138,6 +155,7 @@ const products = [
     },
   },
   {
+    id: 18,
     image: "",
     name: "",
     rating: {
