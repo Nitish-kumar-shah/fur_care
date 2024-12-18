@@ -430,6 +430,9 @@ navbar {
   margin-bottom: 8px;
 
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .add-to-cart img {
   height: 20px;
@@ -438,7 +441,8 @@ navbar {
 .add-to-cart-btn {
   width: 100%;
   padding: 8px;
-  /* border-radius: 50px; */
-  /* cursor: pointer; */
-  /* background-color: #0396ff; */
+}
+
+.added-to-cart-visible {
+  opacity: 1;
 }
