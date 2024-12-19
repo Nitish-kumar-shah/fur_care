@@ -1,3 +1,6 @@
+import { cart } from "./data/cart.js";
+import { products } from "./data/productData.js";
+
 // const leftScroll = document.querySelector(".js-left-btn");
 // const rightScroll = document.querySelector(".js-right-btn");
 // const container = document.querySelector('.header-img')

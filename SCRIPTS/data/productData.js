@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: 1,
     image: "/IMAGES/dp-cat2.webp",
@@ -11,8 +11,8 @@ const products = [
   },
   {
     id: 2,
-    image: "/IMAGES/dog-bg.jpg",
-    name: " hola amigo jfdjkfd djfdjfdf jdkjfdf dkjfdfjd jksdjfdf kdjfd",
+    image: "/IMAGES/Products/dog-product.webp",
+    name: "Dog Shoes- Blue",
     rating: {
       stars: 3,
       conut: 98,
@@ -21,39 +21,43 @@ const products = [
   },
   {
     id: 3,
-    image: "",
-    name: "",
+    image: "/IMAGES/Products/pet-product2.jpg",
+    name: "Puppy Behavioral Aid Toy",
     rating: {
       stars: 4,
       count: 494,
     },
+    priceCents: 2027,
   },
   {
     id: 4,
-    image: "",
-    name: "",
+    image: "/IMAGES/Products/pet-product3.webp",
+    name: "Raw Bites Organic Dehydrated - Salmon Jerky Premium Dog Treats",
     rating: {
       stars: 4,
       count: 494,
     },
+    priceCents: 1032,
   },
   {
     id: 5,
-    image: "",
-    name: "",
+    image: "/IMAGES/Products/pet-product4.webp",
+    name: "Printed T-shirt",
     rating: {
       stars: 4,
       count: 494,
     },
+    priceCents: 1638,
   },
   {
     id: 6,
-    image: "",
-    name: "",
+    image: "/IMAGES/Products/pet-product5.webp",
+    name: "Dog Bandana - Super Dog",
     rating: {
       stars: 4,
       count: 494,
     },
+    priceCents: 532,
   },
   {
     id: 7,
