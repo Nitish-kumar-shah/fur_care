@@ -2,23 +2,28 @@ body {
   font-family: Roboto, Arial;
   color: rgb(33, 33, 33);
   /* The <body> element has a default margin of 8px
-       on all sides. This removes the default margins. */
+     on all sides. This removes the default margins. */
   margin: 0;
 }
-select {
-  color: rgb(33, 33, 33);
-  background-color: rgb(240, 240, 240);
-  border: 1px solid rgb(213, 217, 217);
-  border-radius: 8px;
-  padding: 3px 5px;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+/* <p> elements have a default margin on the top
+   and bottom. This removes the default margins. */
+p {
+  margin: 0;
 }
 
-select:focus,
-input:focus {
-  outline: 2px solid rgb(255, 153, 0);
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+button {
+  font-family: Roboto, Arial;
 }
 
 .limit-text-to-2-lines {
@@ -44,4 +49,29 @@ input:focus {
   background: hsl(205, 100%, 51%);
   border-color: hsl(205, 100%, 47%);
   box-shadow: none;
+}
+
+.link-primary {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+
+.link-primary:hover {
+  color: rgb(196, 80, 0);
+}
+
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(255, 153, 0);
 }
