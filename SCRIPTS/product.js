@@ -1,5 +1,6 @@
 import { cart, addToCart } from "./data/cart.js";
 import { products } from "./data/productData.js";
+import { formatCurrency } from "./data/utils.js";
 
 // const leftScroll = document.querySelector(".js-left-btn");
 // const rightScroll = document.querySelector(".js-right-btn");
@@ -98,8 +99,8 @@ products.forEach((product) => {
                 product.rating.conut
               }</div>
             </div>
-            <div class="product-price">$${(product.priceCents / 100).toFixed(
-              2
+            <div class="product-price">$${formatCurrency(
+              product.priceCents
             )}</div>
             <div class="product-quantity-container">
               <select class="js-quantity-selector-${product.id}">

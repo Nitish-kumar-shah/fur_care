@@ -1,13 +1,13 @@
 export const products = [
   {
     id: 1,
-    image: "/IMAGES/dp-cat2.webp",
+    image: "/IMAGES/Products/pet-product3.webp",
     name: "This is Good product",
     rating: {
       stars: 4.5,
       conut: 87,
     },
-    priceCents: 1098,
+    priceCents: 1090,
   },
   {
     id: 2,
